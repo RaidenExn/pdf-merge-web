@@ -13,8 +13,20 @@
     />
     <title>pdf-merger</title>
     <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
-    <script type="module" crossorigin src="./assets/index-CHZ_k8wV.js"></script>
-    <link rel="stylesheet" crossorigin href="./assets/index-BlU6gvm7.css">
+    <script>
+      try {
+        var _cs = localStorage.getItem('mantine-color-scheme-value');
+        var cs = _cs === 'light' || _cs === 'dark' || _cs === 'auto' ? _cs : 'auto';
+        var computed = cs !== 'auto' ? cs : (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+        document.documentElement.setAttribute('data-mantine-color-scheme', computed);
+      } catch (e) {}
+    </script>
+    <script type="module" crossorigin src="./assets/index-9MM3ymPH.js"></script>
+    <link rel="modulepreload" crossorigin href="./assets/rolldown-runtime-hePW80VL.js">
+    <link rel="modulepreload" crossorigin href="./assets/mantine-vendor-BiET-gD-.js">
+    <link rel="modulepreload" crossorigin href="./assets/pdf-renderer-DRqU0FhV.js">
+    <link rel="stylesheet" crossorigin href="./assets/mantine-vendor-DVbWxlh7.css">
+    <link rel="stylesheet" crossorigin href="./assets/index-DR2NUoB_.css">
   </head>
   <body>
     <div id="root"></div>
